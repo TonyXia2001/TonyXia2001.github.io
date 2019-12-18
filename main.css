@@ -2,13 +2,14 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-image: url("./background2.jpg");
 }
 
 .navbar {
-    background-color: rgb(227, 227, 227);
+    /* background-color: rgb(227, 227, 227); */
     margin: 0 5vw;
     height: 10vh;
-    border-bottom: silver solid 5px;
+    /* border-bottom: silver solid 5px; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,6 +31,7 @@ html, body {
 .rightCol {
     grid-column: 2/3;
     height: 100vh;
+    padding: 0 2.5vw;
 }
 
 .center {
@@ -44,13 +46,14 @@ html, body {
     font-family: "Futura", Trebuchet MS, Arial, sans-serif;
     margin-bottom: 1vh;
     text-align: center;
+    color: silver;
 }
 
 .contact>p {
     width: 100%;
     font-size: 1em;
     font-family: "Futura", Trebuchet MS, Arial, sans-serif;
-    color: black;
+    color: silver;
     margin: 5px 0;
     text-align: center;
 }
@@ -59,7 +62,7 @@ html, body {
     width: 100%;
     font-size: 1.5em;
     font-family: "Futura", Trebuchet MS, Arial, sans-serif;
-    color: black;
+    color: silver;
     margin-top: 5vh;
     text-align: justify;
     padding: 0 2.5vw;
@@ -86,15 +89,15 @@ img {
 }
 
 .navButton>h1 {
-    font-weight: 100;
+    font-weight: bold;
 }
 
 .navButton, .navButton:visited {
     text-decoration: none;
-    color: black;
+    color: silver;
 }
 
 .navButton:hover {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
 }
