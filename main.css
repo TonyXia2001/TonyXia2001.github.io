@@ -62,12 +62,12 @@ html, body {
     color: black;
     margin-top: 5vh;
     text-align: justify;
-    padding: 0 10px;
+    padding: 0 2.5vw;
 }
 
 .photoframe {
     display: flex;
-    height: 90vh;
+    height: 80vh;
     flex-direction: column;
     justify-content: center;
 }
