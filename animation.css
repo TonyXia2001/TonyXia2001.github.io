@@ -1,11 +1,11 @@
 @keyframes show {
-    from {height: 0; margin-top: 0;}
-    to {height: 12em; margin-top: 5vh;}
+    from {height: 1em; margin-top: 5vh;}
+    to {height: 13.5em; margin-top: 5vh;}
 }
 
 .graduallyShown {
     animation-name: show;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
