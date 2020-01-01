@@ -9,23 +9,20 @@
         <script src="main.js" defer></script>
     </head>
     <body>
-        <div class="background">
+        <div class="aboutBackground">
             <div class="decors twinkling1" id="decor1"></div>
             <div class="decors twinkling2" id="decor2"></div>
             <div class="decors flying1" id="decor3"></div>
             <div class="decors flying2" id="decor4"></div>
             <div class="decors twinkling3" id="decor5"></div>
         </div>
-        <div class="mainBody">
+        <div class="mainBody" id="about">
             <div class="navbar">
-                <!-- <a href="./projects/index.html" class="center navButton">
+                <div class="center navButton" id="projectsButton">
                     <h1>PROJECTS</h1>
-                </a> -->
-                <a href="https://github.com/TonyXia2001" class="center navButton">
-                    <h1>PROJECTS</h1>
-                </a>
+                </div>
                 <a href="res/resume.pdf" class="center navButton" target="_blank">
-                    <h1>RÉSUMÉ</h1>
+                    <h1>RESUME</h1>
                 </a>
                 <a href="res/CV.pdf" class="center navButton" target="_blank">
                     <h1>CV</h1>
@@ -34,8 +31,8 @@
                     <h1>MORE</h1>
                 </a>
             </div>
-            <div class="grid">
-                <div class="leftCol">
+            <div class="aboutgrid">
+                <div class="aboutleftCol">
                     <div class="name center">
                         <p>TONY XIA</p>
                     </div>
@@ -46,7 +43,7 @@
                         </p>
                     </div>
                     <div class="about center">
-                        <p id="about">
+                        <p id="aboutText">
                             Hello! I'm Tony(Tanglin) Xia, a computer science student
                             from UCLA. As a challenge-taker, I'm constantly looking
                             for new challenges. My areas of interest are:<br/>
@@ -61,14 +58,35 @@
                         <p>Who Am I?</p>
                     </div>
                 </div>
-                <div class="rightCol">
-                    <div class="photoframe">
-                        <img src="img/photo.png" alt="my photo" draggable="false">
+                <div class="aboutrightCol">
+                    <div class="guitarphotoframe">
+                        <img id="myPhoto" src="img/photo.png" alt="my photo" draggable="false">
                     </div>
                 </div>
             </div>
         </div>
+        <div class="projectsBackground">
 
+        </div>
+        <div class="mainBody" id="projects">
+            <div id="projectsgrid">
+                <h1 id="projectsTitleText">Projects</h1>
+                <div id="projectsLeftCol">
+                    <div class="projectsButtons focused" id="projectsButtons1">Super Slime Rumble</div>
+                    <div class="projectsButtons" id="projectsButtons2">Battle Beasts</div>
+                    <div class="projectsButtons" id="projectsButtons3">Orion? Orion!</div>
+                    <div class="projectsButtons" id="projectsButtons4">Snorpheus</div>
+                </div>
+                <div id="projectsRightCol">
+                    <p id="projectDes">Fast paced, intense 2 player platformer shooting game <br>
+                    Written with Python's Pygame library <br>
+                    Graphics designed with Pixilart</p>
+                    <div id="projectDis">
+                        <iframe width="640px" height="360px" src="https://www.youtube.com/embed/ntJ5wb_uzig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </body>
 </html>

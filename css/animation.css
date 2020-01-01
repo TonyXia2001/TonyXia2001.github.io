@@ -50,11 +50,20 @@
 }
 
 .flying1 {
-    animation: twinkle3 3s infinite, fly1 20s infinite;
+    animation: twinkle3 6s infinite, fly1 30s infinite;
     animation-timing-function: linear;
 }
 .flying2 {
-    animation: twinkle3 3s infinite, fly2 30s infinite;
+    animation: twinkle3 5s infinite, fly2 40s infinite;
     animation-delay: 5s;
     animation-timing-function: linear;
+}
+
+@keyframes silverToBlack {
+    from {color: silver;}
+    to {color: black;}
+}
+.focused {
+    animation: silverToBlack 1s ease;
+    animation-fill-mode: forwards;
 }
