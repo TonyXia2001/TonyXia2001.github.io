@@ -9,3 +9,52 @@
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
+
+@keyframes twinkle1 {
+    0%, 100% {background-color: rgba(255, 255, 255, 0.1);}
+    50% {background-color: rgba(255, 255, 255, 0.2); transform: translate(0, -10px);}
+}
+@keyframes twinkle2 {
+    0%, 100% {background-color: rgba(255, 255, 255, 0.1);}
+    50% {background-color: rgba(255, 255, 255, 0.2); transform: translate(0, 10px);}
+}
+
+@keyframes twinkle3 {
+    0%, 100% {background-color: rgba(255, 255, 255, 0.05);}
+    50% {background-color: rgba(255, 255, 255, 0.2); transform: translate(0, 20px);}
+}
+
+.twinkling1 {
+    animation: twinkle1 3s infinite;
+}
+.twinkling2 {
+    animation: twinkle2 3s infinite;
+}
+.twinkling3 {
+    animation: twinkle3 3s infinite;
+}
+
+@keyframes fly1 {
+    0% {left: -20px; top: 80vh;}
+    10% {top: 70vh;}
+    40% {top: 50vh;}
+    60% {top: 60vh;}
+    100%{left: 100vw; top: 10vh;}
+}
+@keyframes fly2 {
+    0% {left: -20px; top: 20vh;}
+    10% {top: 30vh;}
+    40% {top: 50vh;}
+    50% {top: 40vh;}
+    100%{left: 100vw; top: 10vh;}
+}
+
+.flying1 {
+    animation: twinkle3 3s infinite, fly1 20s infinite;
+    animation-timing-function: linear;
+}
+.flying2 {
+    animation: twinkle3 3s infinite, fly2 30s infinite;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+}

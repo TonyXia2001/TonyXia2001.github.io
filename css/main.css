@@ -5,6 +5,24 @@ html, body {
     background-image: url("../img/background.jpg");
 }
 
+.mainBody {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
 .navbar {
     /* background-color: rgb(227, 227, 227); */
     margin: 0 5vw;
@@ -109,7 +127,7 @@ img {
 
 .navButton {
     width: 8vw;
-    margin: 0 1vw;
+    padding: 0 1vw;
     font-family: "Futura", Trebuchet MS, Arial, sans-serif;
     font-size: 0.75em;
     height: 100%;
@@ -128,4 +146,43 @@ img {
 .navButton:hover {
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
+}
+
+.decors {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    filter: blur(1px);
+    position: absolute;
+}
+
+#decor1 {
+    left: 30vw;
+    top: 20vh;
+    width: 15px;
+    height: 15px;
+}
+#decor2 {
+    left: 80vw;
+    top: 40vh;
+    width: 10px;
+    height: 10px;
+}
+#decor3 {
+    left: -20px;
+    top: 80vh;
+    width: 20px;
+    height: 20px;
+}
+#decor4 {
+    left: -20px;
+    top: 20vh;
+    width: 20px;
+    height: 20px;
+    blur(10px);
+}
+#decor5 {
+    left: 10vw;
+    top: 50vh;
+    width: 10px;
+    height: 10px;
 }
