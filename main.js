@@ -80,6 +80,10 @@ function refreshProjectPage(index) {
 }
 function displayProjectPage() {
     var projectsPage = document.getElementById("projects");
+    var des = document.getElementById("projectDes");
+    var dis = document.getElementById("projectDis");
+    des.innerHTML = des.innerHTML = descriptions[0];
+    dis.innerHTML = dis.innerHTML = displays[0];
     projectsPage.classList.remove("appeared");
     void projectsPage.offsetTop;
     projectsPage.classList.add("appeared");
