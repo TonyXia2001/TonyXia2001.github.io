@@ -22,10 +22,15 @@ projectsButton.addEventListener("click", ()=>{
         _.classList.remove("focused");
     }
     document.getElementById("projectsButtons1").classList.remove("focused");
+    displayProjectPage();
     setTimeout(()=>{
         document.getElementById("projectsButtons1").classList.add("focused");
     }, 500);
 });
+var skillsButton = document.getElementById("skillsButton");
+skillsButton.addEventListener("click", ()=>{
+    scrollTo(document.getElementById("skills"));
+})
 
 // DISPLAY PROJECTS // DISPLAY PROJECTS // DISPLAY PROJECTS // DISPLAY PROJECTS
 var descriptions = [
@@ -42,10 +47,10 @@ var descriptions = [
     Developed under 24 hours during StarterHacks 2019 with 4 others`
 ];
 var displays = [
-    `<iframe width="640px" height="360px" src="https://www.youtube.com/embed/ntJ5wb_uzig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+    `<iframe height="100%" width="100%" src="https://www.youtube.com/embed/ntJ5wb_uzig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
     `<img src="./img/battleBeast.png" height="100%" alt="battleBeast">`,
-    `<img src="./img/orion.jpg" width="100%" alt="orion">`,
-    `<img src="./img/snorpheus.png" width="100%" alt="snorpheus">`
+    `<img src="./img/orion.jpg" height="100%" alt="orion">`,
+    `<img src="./img/snorpheus.png" height="100%" alt="snorpheus">`
 ];
 
 var projectsButtons = document.getElementsByClassName("projectsButtons");
@@ -55,16 +60,34 @@ for (let i = 0; i < projectsButtons.length; i++) {
             _.classList.remove("focused");
         }
         projectsButtons[i].classList.add("focused");
-        refreshDes(i);
-        refreshDis(i);
+        refreshProjectPage(i);
     })
 }
 
-function refreshDes(index) {
+refreshAnimationTime = 1000;
+function refreshProjectPage(index) {
     var des = document.getElementById("projectDes");
-    des.innerHTML = descriptions[index];
-}
-function refreshDis(index) {
     var dis = document.getElementById("projectDis");
-    dis.innerHTML = displays[index];
+    des.classList.remove("refreshed");
+    dis.classList.remove("refreshed");
+    void des.offsetTop;         // force DOM to recalculate the elem. Google "reflow"
+    void dis.offsetTop;
+    des.classList.add("refreshed");
+    dis.classList.add("refreshed");
+    setTimeout(()=>{des.innerHTML = descriptions[index];}, refreshAnimationTime/2);
+    setTimeout(()=>{dis.innerHTML = displays[index];}, refreshAnimationTime/2);
+}
+function displayProjectPage() {
+    var des = document.getElementById("projectDes");
+    var dis = document.getElementById("projectDis");
+    void des.offsetTop;
+    void dis.offsetTop;
+    des.classList.add("appeared");
+    dis.classList.add("appeared");
+    setTimeout(()=>{
+        des.classList.remove("appeared");
+        dis.classList.remove("appeared");
+        dis.classList.remove("refreshed");
+        dis.classList.remove("refreshed");
+    }, 1000);
 }

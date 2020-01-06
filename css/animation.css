@@ -67,3 +67,19 @@
     animation: silverToBlack 1s ease;
     animation-fill-mode: forwards;
 }
+
+@keyframes refresh {
+    50% {opacity: 0;}
+    0%, 100% {opacity: 100%;}
+}
+.refreshed {
+    animation: refresh 1s ease forwards;
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 100%;}
+}
+.appeared {
+    animation: appear 1s forwards;
+}
