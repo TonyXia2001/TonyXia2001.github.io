@@ -73,7 +73,7 @@
     0%, 100% {opacity: 100%;}
 }
 .refreshed {
-    animation: refresh 1s ease forwards;
+    animation: refresh 0.5s ease forwards;
 }
 
 @keyframes appear {
@@ -82,4 +82,28 @@
 }
 .appeared {
     animation: appear 1.5s forwards;
+}
+
+@keyframes skillImageChangesColor {
+    0% {background-color: transparent; opacity: 1;}
+    30% {background-color: transparent; opacity: 0.8;}
+    100% {background-color: rgba(255, 255, 255, 0.5); opacity: 1;}
+}
+.skillImageChangesColor {
+    animation: 1s forwards skillImageChangesColor;
+}
+@keyframes skillNameChangesColor {
+    0%, 100% {color: transparent;}
+    30% {color: white;}
+}
+.skillNameChangesColor {
+    animation: skillNameChangesColor 1s forwards;
+}
+
+@keyframes skillImageResets {
+    from {background: rgba(255, 255, 255, 0.5);}
+    to {background-color: transparent;}
+}
+.skillImageUnhovered {
+    animation: skillImageResets 1s forwards;
 }

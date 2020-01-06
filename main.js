@@ -27,10 +27,11 @@ projectsButton.addEventListener("click", ()=>{
         document.getElementById("projectsButtons1").classList.add("focused");
     }, 500);
 });
-// var skillsButton = document.getElementById("skillsButton");
-// skillsButton.addEventListener("click", ()=>{
-//     scrollTo(document.getElementById("skills"));
-// })
+var skillsButton = document.getElementById("skillsButton");
+skillsButton.addEventListener("click", ()=>{
+    scrollTo(document.getElementById("skills"));
+    displaySkillsPage();
+})
 
 // DISPLAY PROJECTS // DISPLAY PROJECTS // DISPLAY PROJECTS // DISPLAY PROJECTS
 var descriptions = [
@@ -64,7 +65,7 @@ for (let i = 0; i < projectsButtons.length; i++) {
     })
 }
 
-refreshAnimationTime = 1000;
+refreshAnimationTime = 500;
 function refreshProjectPage(index) {
     var des = document.getElementById("projectDes");
     var dis = document.getElementById("projectDis");
@@ -78,22 +79,35 @@ function refreshProjectPage(index) {
     setTimeout(()=>{dis.innerHTML = displays[index];}, refreshAnimationTime/2);
 }
 function displayProjectPage() {
-    var des = document.getElementById("projectDes");
-    var dis = document.getElementById("projectDis");
-    var title = document.getElementById("projectsTitleText");
-    des.innerHTML = descriptions[0];
-    dis.innerHTML = displays[0];
-    des.classList.remove("refreshed");
-    dis.classList.remove("refreshed");
-    void des.offsetTop;
-    void dis.offsetTop;
-    void title.offsetTop;
-    des.classList.add("appeared");
-    dis.classList.add("appeared");
-    title.classList.add("appeared");
-    setTimeout(()=>{
-        des.classList.remove("appeared");
-        dis.classList.remove("appeared");
-        title.classList.remove("appeared");
-    }, 1000);
+    var projectsPage = document.getElementById("projects");
+    projectsPage.classList.remove("appeared");
+    void projectsPage.offsetTop;
+    projectsPage.classList.add("appeared");
+}
+
+// skills page skills page // skills page skills page // skills page skills page
+var skills = document.getElementsByClassName("skills");
+for (let each of skills) {
+    let img = each.getElementsByTagName("img")[0];
+    let div = each.getElementsByTagName("div")[0];
+    each.addEventListener("mouseover", ()=>{
+        img.classList.remove("skillImageUnhovered");
+        img.classList.remove("skillImageChangesColor");
+        div.classList.remove("skillNameChangesColor");
+        void each.offsetTop;
+        img.classList.add("skillImageChangesColor");
+        div.classList.add("skillNameChangesColor");
+    });
+    each.addEventListener("mouseout", ()=>{
+        img.classList.remove("skillImageUnhovered");
+        void each.offsetTop;
+        img.classList.add("skillImageUnhovered");
+    })
+}
+
+function displaySkillsPage() {
+    var skillsPage = document.getElementById("skills");
+    skillsPage.classList.remove("appeared");
+    void skillsPage.offsetTop;
+    skillsPage.classList.add("appeared");
 }
