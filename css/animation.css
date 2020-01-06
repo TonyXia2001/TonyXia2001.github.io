@@ -81,5 +81,5 @@
     to {opacity: 100%;}
 }
 .appeared {
-    animation: appear 1s forwards;
+    animation: appear 1.5s forwards;
 }

@@ -27,10 +27,10 @@ projectsButton.addEventListener("click", ()=>{
         document.getElementById("projectsButtons1").classList.add("focused");
     }, 500);
 });
-var skillsButton = document.getElementById("skillsButton");
-skillsButton.addEventListener("click", ()=>{
-    scrollTo(document.getElementById("skills"));
-})
+// var skillsButton = document.getElementById("skillsButton");
+// skillsButton.addEventListener("click", ()=>{
+//     scrollTo(document.getElementById("skills"));
+// })
 
 // DISPLAY PROJECTS // DISPLAY PROJECTS // DISPLAY PROJECTS // DISPLAY PROJECTS
 var descriptions = [
@@ -80,14 +80,18 @@ function refreshProjectPage(index) {
 function displayProjectPage() {
     var des = document.getElementById("projectDes");
     var dis = document.getElementById("projectDis");
+    var title = document.getElementById("projectsTitleText");
+    des.classList.remove("refreshed");
+    dis.classList.remove("refreshed");
     void des.offsetTop;
     void dis.offsetTop;
+    void title.offsetTop;
     des.classList.add("appeared");
     dis.classList.add("appeared");
+    title.classList.add("appeared");
     setTimeout(()=>{
         des.classList.remove("appeared");
         dis.classList.remove("appeared");
-        dis.classList.remove("refreshed");
-        dis.classList.remove("refreshed");
+        title.classList.remove("appeared");
     }, 1000);
 }
