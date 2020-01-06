@@ -94,7 +94,7 @@
 }
 @keyframes skillNameChangesColor {
     0%, 100% {color: transparent;}
-    30% {color: white;}
+    33%, 66% {color: white;}
 }
 .skillNameChangesColor {
     animation: skillNameChangesColor 1s forwards;

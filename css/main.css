@@ -304,8 +304,7 @@ html, body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .skills {
-    width: calc(100% - 2 * 10px);
-    margin: 10px;
+    width: calc(100%);
     position: relative;
     cursor: pointer;
 }
@@ -316,7 +315,7 @@ html, body {
     left: 0;
     right: 0;
     margin: auto;
-    width: 95%;
+    width: 90%;
 }
 .skillText {
     position: absolute;

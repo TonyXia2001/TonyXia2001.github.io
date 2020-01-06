@@ -95,17 +95,17 @@ for (let each of skills) {
     let img = each.getElementsByTagName("img")[0];
     let div = each.getElementsByTagName("div")[0];
     each.addEventListener("mouseover", ()=>{
-        img.classList.remove("skillImageUnhovered");
-        img.classList.remove("skillImageChangesColor");
+        each.classList.remove("skillImageUnhovered");
+        each.classList.remove("skillImageChangesColor");
         div.classList.remove("skillNameChangesColor");
         void each.offsetTop;
-        img.classList.add("skillImageChangesColor");
+        each.classList.add("skillImageChangesColor");
         div.classList.add("skillNameChangesColor");
     });
     each.addEventListener("mouseout", ()=>{
-        img.classList.remove("skillImageUnhovered");
+        each.classList.remove("skillImageUnhovered");
         void each.offsetTop;
-        img.classList.add("skillImageUnhovered");
+        each.classList.add("skillImageUnhovered");
     })
 }
 
