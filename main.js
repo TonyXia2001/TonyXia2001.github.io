@@ -81,6 +81,8 @@ function displayProjectPage() {
     var des = document.getElementById("projectDes");
     var dis = document.getElementById("projectDis");
     var title = document.getElementById("projectsTitleText");
+    des.innerHTML = descriptions[0];
+    dis.innerHTML = displays[0];
     des.classList.remove("refreshed");
     dis.classList.remove("refreshed");
     void des.offsetTop;
