@@ -45,13 +45,17 @@ var descriptions = [
     Written with TensorFlow Keras library <br>`,
     `A Web Application that detects audio files' chord progression <br>
     Utilized TensorFlow, HTML, JS, CSS, and Python <br>
-    Developed under 24 hours during StarterHacks 2019 with 4 others`
+    Developed under 24 hours during StarterHacks 2019 with 4 others`,
+    `Managed over 10 years' worth of data <br>
+    Analyzed the trend of AP exam scores over the past few years <br>
+    Determined the relative difficulty of various AP exams`
 ];
 var displays = [
     `<iframe height="100%" width="100%" src="https://www.youtube.com/embed/ntJ5wb_uzig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
     `<img src="./img/battleBeast.png" height="100%" alt="battleBeast">`,
     `<img src="./img/orion.jpg" height="100%" alt="orion">`,
-    `<img src="./img/snorpheus.png" height="100%" alt="snorpheus">`
+    `<img src="./img/snorpheus.png" height="100%" alt="snorpheus">`,
+    `<img src="./img/APTestScores.png" height="100%" alt="ap">`
 ];
 
 var projectsButtons = document.getElementsByClassName("projectsButtons");
