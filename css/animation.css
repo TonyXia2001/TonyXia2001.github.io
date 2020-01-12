@@ -59,12 +59,12 @@
     animation-timing-function: linear;
 }
 
-@keyframes silverToBlack {
-    from {color: silver;}
+@keyframes whiteToBlack {
+    from {color: white;}
     to {color: black;}
 }
 .focused {
-    animation: silverToBlack 1s ease;
+    animation: whiteToBlack 1s ease;
     animation-fill-mode: forwards;
 }
 

@@ -34,29 +34,6 @@ skillsButton.addEventListener("click", ()=>{
 })
 
 // DISPLAY PROJECTS // DISPLAY PROJECTS // DISPLAY PROJECTS // DISPLAY PROJECTS
-var descriptions = [
-    `Fast paced, intense 2 player platformer shooting game <br>
-    Written with Python's Pygame library <br>
-    Graphics designed with Pixilart`,
-    `Simple but fun single player tank game <br>
-    Written with Python's Pygame library <br>
-    Graphics designed with Pixilart`,
-    `A Convolutional Neural Network for constellation categorization <br>
-    Written with TensorFlow Keras library <br>`,
-    `A Web Application that detects audio files' chord progression <br>
-    Utilized TensorFlow, HTML, JS, CSS, and Python <br>
-    Developed under 24 hours during StarterHacks 2019 with 4 others`,
-    `Managed over 10 years' worth of data <br>
-    Analyzed the trend of AP exam scores over the past few years <br>
-    Determined the relative difficulty of various AP exams`
-];
-var displays = [
-    `<iframe height="100%" width="100%" src="https://www.youtube.com/embed/ntJ5wb_uzig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-    `<img src="./img/battleBeast.png" height="100%" alt="battleBeast">`,
-    `<img src="./img/orion.jpg" height="100%" alt="orion">`,
-    `<img src="./img/snorpheus.png" height="100%" alt="snorpheus">`,
-    `<img src="./img/APTestScores.png" height="100%" alt="ap">`
-];
 
 var projectsButtons = document.getElementsByClassName("projectsButtons");
 for (let i = 0; i < projectsButtons.length; i++) {
@@ -71,23 +48,37 @@ for (let i = 0; i < projectsButtons.length; i++) {
 
 refreshAnimationTime = 500;
 function refreshProjectPage(index) {
+    var name = document.getElementById("projectName");
     var des = document.getElementById("projectDes");
     var dis = document.getElementById("projectDis");
+    var link = document.getElementById("projectLink");
+    name.classList.remove("refreshed");
     des.classList.remove("refreshed");
     dis.classList.remove("refreshed");
+    link.classList.remove("refreshed");
+    void name.offsetTop;
     void des.offsetTop;         // force DOM to recalculate the elem. Google "reflow"
     void dis.offsetTop;
+    void link.offsetTop;
+    name.classList.add("refreshed");
     des.classList.add("refreshed");
     dis.classList.add("refreshed");
-    setTimeout(()=>{des.innerHTML = descriptions[index];}, refreshAnimationTime/2);
-    setTimeout(()=>{dis.innerHTML = displays[index];}, refreshAnimationTime/2);
+    link.classList.add("refreshed");
+    setTimeout(()=>{name.innerHTML = projects[index].name;}, refreshAnimationTime/2);
+    setTimeout(()=>{des.innerHTML = projects[index].description;}, refreshAnimationTime/2);
+    setTimeout(()=>{dis.innerHTML = projects[index].display;}, refreshAnimationTime/2);
+    setTimeout(()=>{link.href = projects[index].link;}, refreshAnimationTime/2);
 }
 function displayProjectPage() {
     var projectsPage = document.getElementById("projects");
     var des = document.getElementById("projectDes");
     var dis = document.getElementById("projectDis");
-    des.innerHTML = des.innerHTML = descriptions[0];
-    dis.innerHTML = dis.innerHTML = displays[0];
+    var name = document.getElementById("projectName");
+    var link = document.getElementById("projectLink");
+    des.innerHTML = projects[0].description;
+    dis.innerHTML = projects[0].display;
+    name.innerHTML = projects[0].name;
+    link.href = projects[0].link;
     projectsPage.classList.remove("appeared");
     void projectsPage.offsetTop;
     projectsPage.classList.add("appeared");
