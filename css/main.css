@@ -16,6 +16,9 @@ html, body {
     width: 100vw;
     height: 100vh;
     position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .lightgrey {
     background-color: rgb(250, 240, 230);
@@ -41,6 +44,9 @@ html, body {
     top: 0;
     left: 0;
     z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     background-image: url("../img/background.jpg");
 }
 .decors {
@@ -341,6 +347,7 @@ html, body {
     top: 200vh;
     width: 100vw;
     height: 100vh;
+    background-image: url("../img/background2.jpg");
 }
 
 #skillsTitle {
