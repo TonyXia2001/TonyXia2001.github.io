@@ -91,20 +91,23 @@ html, body {
 /* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR *//* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR *//* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
 .navbar {
     /* background-color: rgb(227, 227, 227); */
-    margin: 0 5vw;
+    margin: 0;
     height: 10vh;
-    /* border-bottom: silver solid 5px; */
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 2;
 }
 
 .navButton {
     width: 8vw;
     padding: 0 1vw;
     font-family: "Futura", Trebuchet MS, Arial, sans-serif;
-    font-size: 0.75em;
+    font-size: 0.9vw;
     height: 100%;
     align-items: center;
 }
@@ -133,7 +136,7 @@ html, body {
 
 .aboutleftCol {
     grid-column: 1/2;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,7 +145,7 @@ html, body {
 
 .aboutrightCol {
     grid-column: 2/3;
-    height: 80vh;
+    height: 100vh;
     padding: 0 2.5vw;
 }
 
@@ -154,16 +157,19 @@ html, body {
 
 .name>p {
     width: 100%;
-    font-size: 5em;
+    font-size: 6vw;
     font-family: "Futura", Trebuchet MS, Arial, sans-serif;
     margin-bottom: 1vh;
     text-align: center;
     color: silver;
 }
+#responsiveLB {
+    display: none;
+}
 
 .contact>p {
     width: 100%;
-    font-size: 1em;
+    font-size: 1vw;
     font-family: "Futura", Trebuchet MS, Arial, sans-serif;
     color: silver;
     margin: 5px 0;
@@ -173,7 +179,7 @@ html, body {
 .about>p {
     width: 100%;
     height: 0;
-    font-size: 1.5em;
+    font-size: 2vw;
     font-family: "Futura", Trebuchet MS, Arial, sans-serif;
     color: silver;
     margin-top: 0vh;
@@ -194,10 +200,9 @@ html, body {
 }
 
 .learnMoreButton>p {
-    height: 1em;
     width: auto;
     color: silver;
-    font-size: 1.5em;
+    font-size: 1.5vw;
     font-weight: bold;
     font-family: "Futura", Trebuchet MS, Arial, sans-serif;
     text-align: center;
@@ -206,13 +211,43 @@ html, body {
 
 .guitarphotoframe {
     display: flex;
-    height: 80vh;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
 }
 
 #myPhoto {
     width: 100%;
+}
+
+@media screen and (max-width: 700px), screen and (max-device-width: 700px) {
+    .aboutgrid {
+        grid-template-columns: 1fr;
+    }
+    .aboutleftCol {
+        grid-column: 1/2;
+        height: 90vh;
+    }
+    .aboutrightCol {
+        display: none;
+    }
+    .name>p {
+        font-size: 15vw;
+    }
+    .contact>p {
+        font-size: 3vw;
+    }
+    .about>p {
+        width: 50%;
+        font-size: 3vw;
+        text-align: center;
+    }
+    #responsiveLB {
+        display: inline;
+    }
+    .learnMoreButton>p {
+        font-size: 3vw;
+    }
 }
 
 /* PROJECTS PROJECTS PROJECTS PROJECTS *//* PROJECTS PROJECTS PROJECTS PROJECTS *//* PROJECTS PROJECTS PROJECTS PROJECTS */

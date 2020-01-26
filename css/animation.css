@@ -1,6 +1,6 @@
 @keyframes show {
-    from {height: 1em; margin-top: 5vh;}
-    to {height: 13.5em; margin-top: 5vh;}
+    from {height: 1vh; margin-top: 5vh;}
+    to {height: 20vh; margin-top: 5vh;}
 }
 
 .graduallyShown {
