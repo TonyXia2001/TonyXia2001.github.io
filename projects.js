@@ -22,7 +22,7 @@ var projects = [
         display:
             `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/6gpFYKKUGSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
         link:
-            "https://github.com/CSMT-Westwood/eXchange"
+            "https://csmt-westwood.github.io/eXchange"
     },
     {
         name:
