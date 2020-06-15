@@ -87,21 +87,21 @@
 @keyframes skillImageChangesColor {
     0% {background-color: transparent; opacity: 1;}
     30% {background-color: transparent; opacity: 0.8;}
-    100% {background-color: rgba(255, 255, 255, 0.5); opacity: 1;}
+    100% {background-color: rgba(177, 177, 177, 0.5); opacity: 1;}
 }
 .skillImageChangesColor {
     animation: 1s forwards skillImageChangesColor;
 }
 @keyframes skillNameChangesColor {
     0%, 100% {color: transparent;}
-    33%, 66% {color: white;}
+    33%, 66% {color: black;}
 }
 .skillNameChangesColor {
     animation: skillNameChangesColor 1s forwards;
 }
 
 @keyframes skillImageResets {
-    from {background: rgba(255, 255, 255, 0.5);}
+    from {background: rgba(177, 177, 177, 0.5);}
     to {background-color: transparent;}
 }
 .skillImageUnhovered {

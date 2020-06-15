@@ -11,8 +11,8 @@ function scrollTo(element) {
   window.scroll({
     behavior: 'smooth',
     left: 0,
-    top: element.offsetTop
-  });
+    top: element.offsetTop + element.offsetParent.offsetTop
+  });  
 }
 var projectsButton = document.getElementById("projectsButton");
 var projectsSec = document.getElementById("projects");
@@ -29,7 +29,7 @@ projectsButton.addEventListener("click", ()=>{
 });
 var skillsButton = document.getElementById("skillsButton");
 skillsButton.addEventListener("click", ()=>{
-    scrollTo(document.getElementById("skills"));
+    scrollTo(document.getElementById("skillsTitle"));
     displaySkillsPage();
 })
 

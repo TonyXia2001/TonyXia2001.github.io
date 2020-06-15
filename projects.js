@@ -13,6 +13,19 @@ var projects = [
     },
     {
         name:
+            "eXchange",
+        description:
+            `
+                Platform for students to trade study resources <br>
+                written with mongoDB, ExpressJS, ReactJS, and NodeJS
+            `,
+        display:
+            `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/6gpFYKKUGSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+        link:
+            "https://github.com/CSMT-Westwood/eXchange"
+    },
+    {
+        name:
             "Battle Beasts",
         description:
             `Simple but fun single player tank game <br>

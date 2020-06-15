@@ -399,15 +399,15 @@ html, body {
     left: 0;
     top: 200vh;
     width: 100vw;
-    height: 100vh;
+    height: 180vh;
 }
 #skillsBackground {
     position: absolute;
     left: 0;
     top: 200vh;
     width: 100vw;
-    height: 100vh;
-    background-image: url("../img/background2.jpg");
+    height: 180vh;
+    /* background-image: url("../img/background2.jpg"); */
 }
 
 #skillsTitle {
@@ -416,37 +416,37 @@ html, body {
     grid-column: 1/3;
     font-size: 4em;
     margin-top: 0;
-    color: silver;
+    color: black;
     position: absolute;
-    top: 5vh;
+    top: 15vh;
     width: 100%;
 }
 
 #skillsgrid {
     position: absolute;
-    display: grid;
-    top: 20vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 30vh;
     left: 10vw;
     width: 80vw;
-    height: 70vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .skills {
-    width: calc(100%);
-    position: relative;
+    width: 20vw;
+    height: 20vw;
     cursor: pointer;
 }
 .skills>img {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 70%;
+    position: relative;
+    left: 2.5vw;
+    top: 2.5vw;
+    width: 15vw;
+    height: 15vw;
 }
 .skillText {
-    position: absolute;
+    position: relative;
+    top: -15vw;
     width: 100%;
     height: 100%;
     color: transparent;
@@ -459,7 +459,7 @@ html, body {
     font-family: "Futura", Trebuchet MS, Arial, sans-serif;
 }
 
-#skill1 {
+/* #skill1 {
     grid-column: 1/2;
     grid-row: 1/2;
 }
@@ -490,7 +490,7 @@ html, body {
 #skill8 {
     grid-column: 4/5;
     grid-row: 2/3;
-}
+} */
 
 /* resume resume resume res *//* resume resume resume res *//* resume resume resume res */
 #resume {
