@@ -1,5 +1,5 @@
 # Tony Xia's Personal Website
-My portfolio: https://tonyxia2001.github.io/MyPage/
+My portfolio: https://tonyxia2001.github.io/
 
 ## Built with 
 - HTML
