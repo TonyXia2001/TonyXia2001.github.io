@@ -1,15 +1,18 @@
 var projects = [
     {
         name:
-            "Super Slime Rumble",
+            "BQuest",
         description:
-            `Fast paced, intense 2 player platformer shooting game <br>
-            Written with Python's Pygame library <br>
-            Graphics designed with Pixilart`,
+            `
+                Platform for students to connect with mentors <br>
+                Designed, developed, and maintained the backend API for the webpage
+                Backend API written using Python Django
+            `,
         display:
-            `<iframe height="100%" width="100%" src="https://www.youtube.com/embed/ntJ5wb_uzig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+            `<img src="./img/bquest.png" height="100%" alt="bquest">`,
         link:
-            "https://github.com/TonyXia2001/Super-Slime-Rumble"
+            "https://bquest.ucladevx.com/"
+
     },
     {
         name:
@@ -23,6 +26,18 @@ var projects = [
             `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/6gpFYKKUGSk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
         link:
             "https://csmt-westwood.github.io/eXchange"
+    },
+    {
+        name:
+            "Super Slime Rumble",
+        description:
+            `Fast paced, intense 2 player platformer shooting game <br>
+            Written with Python's Pygame library <br>
+            Graphics designed with Pixilart`,
+        display:
+            `<iframe height="100%" width="100%" src="https://www.youtube.com/embed/ntJ5wb_uzig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+        link:
+            "https://github.com/TonyXia2001/Super-Slime-Rumble"
     },
     {
         name:
