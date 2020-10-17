@@ -5,7 +5,7 @@ var projects = [
         description:
             `
                 Platform for students to connect with mentors <br>
-                Designed, developed, and maintained the backend API for the webpage
+                Designed, developed, and maintained the backend API for the webpage <br>
                 Backend API written using Python Django
             `,
         display:
