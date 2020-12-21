@@ -9,7 +9,7 @@ var projects = [
                 Backend API written using Python Django
             `,
         display:
-            `<img src="./img/bquest.png" height="100%" alt="bquest">`,
+            `<img src="./img/bquest.png" width="100%" alt="bquest">`,
         link:
             "https://bquest.ucladevx.com/"
 

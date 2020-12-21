@@ -394,6 +394,48 @@ html, body {
     color: black;
 }
 
+@media screen and (max-width: 700px), screen and (max-device-width: 700px) {
+    #projectsgrid {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-center;
+        align-items: center;
+    }
+    #projectsTitleText::after {
+        height: 2vh;
+    }
+    #projectsTitleText {
+        padding: 1vh 0; 
+        grid-column: auto;   
+        width: 100%;    
+    }
+    #projectsLeftCol {
+        grid-column: auto;
+        grid-row: auto;
+        width: 100%;
+        margin-bottom: 5vh;
+        flex-direction: row;
+    }
+    #projectsRightCol {
+        grid-column: auto;
+        grid-row: auto;
+        width: 100%;
+        border: none;
+    }
+    #projectName {
+        font-size: 3em;
+    }
+    #projectDes {
+        font-size: 1.5em;
+        text-align: left;
+        margin-bottom: 5vh;
+    }
+    #projectDis {
+        width: 100%;
+        height: 30vh;
+    }
+}
+
 /*SKILLS SKILLS SKILLS SKILLS*//*SKILLS SKILLS SKILLS SKILLS*//*SKILLS SKILLS SKILLS SKILLS*/
 #skills {
     position: absolute;
@@ -499,38 +541,7 @@ html, body {
         left: 0;
     }
 }
-/* #skill1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-#skill2 {
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-#skill3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-#skill4 {
-    grid-column: 4/5;
-    grid-row: 1/2;
-}
-#skill5 {
-    grid-column: 5/6;
-    grid-row: 1/2;
-}
-#skill6 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-#skill7 {
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-#skill8 {
-    grid-column: 4/5;
-    grid-row: 2/3;
-} */
+
 
 /* resume resume resume res *//* resume resume resume res *//* resume resume resume res */
 #resume {

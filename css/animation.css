@@ -100,10 +100,23 @@
     animation: skillNameChangesColor 1s forwards;
 }
 
+
 @keyframes skillImageResets {
     from {background: rgba(177, 177, 177, 0.5);}
     to {background-color: transparent;}
 }
 .skillImageUnhovered {
     animation: skillImageResets 1s forwards;
+}
+
+@media screen and (max-width: 700px), screen and (max-device-width: 700px) {
+    .skillImageChangesColor {
+        animation: none;
+    }
+    .skillNameChangesColor {
+        animation: none;
+    }
+    .skillImageUnhovered {
+        animation: none;
+    }
 }
