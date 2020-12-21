@@ -405,6 +405,7 @@ html, body {
         height: 2vh;
     }
     #projectsTitleText {
+        margin-top: 10vh;
         padding: 1vh 0; 
         grid-column: auto;   
         width: 100%;    
