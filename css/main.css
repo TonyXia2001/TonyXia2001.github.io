@@ -405,9 +405,10 @@ html, body {
         height: 2vh;
     }
     #projectsTitleText {
-        margin-top: 10vh;
+        margin-top: 3vh;
         padding: 1vh 0; 
-        grid-column: auto;   
+        grid-column: auto;
+        font-size: 5em;
         width: 100%;    
     }
     #projectsLeftCol {
@@ -416,6 +417,9 @@ html, body {
         width: 100%;
         margin-bottom: 5vh;
         flex-direction: row;
+    }
+    .projectsButtons {
+        font-size: 1.5em;
     }
     #projectsRightCol {
         grid-column: auto;
@@ -427,13 +431,21 @@ html, body {
         font-size: 3em;
     }
     #projectDes {
-        font-size: 1.5em;
+        padding: 0 10vw;
+        font-size: 2em;
         text-align: left;
         margin-bottom: 5vh;
     }
     #projectDis {
         width: 100%;
         height: 30vh;
+    }
+    #projectLink {
+        width: 50%;
+        font-size: 3em;
+        border-radius: 3em;
+        padding: 10px 10px;
+        /* background-color: pink; */
     }
 }
 
@@ -519,6 +531,9 @@ html, body {
         left: 5vw;
         top: 25vh;
         column-gap: 10vw;
+    }
+    #skillsTitle {
+        font-size: 5em;
     }
     .skills {
         width: 40vw;
