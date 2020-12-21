@@ -402,6 +402,7 @@ html, body {
     width: 100vw;
     height: 180vh;
 }
+
 #skillsBackground {
     position: absolute;
     left: 0;
@@ -460,6 +461,44 @@ html, body {
     font-family: "Futura", Trebuchet MS, Arial, sans-serif;
 }
 
+@media screen and (max-width: 700px), screen and (max-device-width: 700px) {
+    #skills {
+        height: 100vh;
+    }
+    #skillsBackground {
+        height: 100vh;
+    }
+
+    #skillsgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90vw;
+        left: 5vw;
+        top: 25vh;
+        column-gap: 10vw;
+    }
+    .skills {
+        width: 40vw;
+        height: 20vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills>img {
+        position: static;
+        width: 18vw;
+        height: 18vw;
+    }
+    .skillText {
+        position: static;
+        width: 18vw;
+        height: 18vw;
+        color: black;
+        top: 0;
+        left: 0;
+    }
+}
 /* #skill1 {
     grid-column: 1/2;
     grid-row: 1/2;
