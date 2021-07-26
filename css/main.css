@@ -129,7 +129,7 @@ html, body {
 @media screen and (max-width: 700px), screen and (max-device-width: 700px) {
     .navButton {
         font-size: 1.7vw;
-        marin: 0 1vw;
+        margin: 0 1vw;
         width: 15vw;
     }
 }

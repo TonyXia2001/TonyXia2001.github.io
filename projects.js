@@ -1,6 +1,34 @@
 var projects = [
     {
         name:
+            "Joe's Kitchen",
+        description:
+            `
+                A mobile app that finds recipes based on what you have in the fridge <br>
+                Developed using React native, Google Vision API, and Spoonacular API <br>
+                TOHacks 2021 Submission
+            `,
+        display:
+            `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/YzSc19ZaH7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+        link:
+            "https://devpost.com/software/joe-s-kitchen?ref_content=my-projects-tab&ref_feature=my_projects"
+    },
+    {
+        name:
+            "CodeForces Decoder",
+        description:
+            `
+                Webapp that uses deep learning to predict coding problem type <br>
+                Model developed using PyTorch and HuggingFace Transformer, fine tuned on 7000 problems <br>
+                Frontend developed with React and material UI
+            `,
+        display:
+            `<img src="./img/codeforcesdecoder.png" width="100%" alt="CFDecoder">`,
+        link:
+            "https://google.com/"
+    },
+    {
+        name:
             "BQuest",
         description:
             `
@@ -73,17 +101,5 @@ var projects = [
             `<img src="./img/snorpheus.png" width="100%" alt="snorpheus">`,
         link:
             "https://github.com/JohnBish/snorpheus"
-    },
-    {
-        name:
-            "AP Score Analysis",
-        description:
-            `Managed over 10 years' worth of data <br>
-            Analyzed the trend of AP exam scores over the past few years <br>
-            Determined the relative difficulty of various AP exams`,
-        display:
-            `<img src="./img/APTestScores.png" width="100%" alt="ap">`,
-        link:
-            "https://drive.google.com/file/d/1PxH4dugxbTieBssJHILXd1ZoUju3-Tmu/view?usp=sharing"
     }
 ]
