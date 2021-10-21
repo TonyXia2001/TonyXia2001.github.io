@@ -77,11 +77,12 @@
 }
 
 @keyframes appear {
-    from {opacity: 0;}
-    to {opacity: 100%;}
+    0% {opacity: 0;}
+    20% {opacity: 0%;}
+    100% {opacity: 100%;}
 }
 .appeared {
-    animation: appear 1.5s forwards;
+    animation: appear 2s forwards;
 }
 
 @keyframes skillImageChangesColor {

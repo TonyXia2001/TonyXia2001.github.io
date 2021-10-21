@@ -29,7 +29,7 @@ projectsButton.addEventListener("click", ()=>{
 });
 var skillsButton = document.getElementById("skillsButton");
 skillsButton.addEventListener("click", ()=>{
-    scrollTo(document.getElementById("skillsTitle"));
+    scrollTo(document.getElementById("skillsAnchor"));
     displaySkillsPage();
 })
 

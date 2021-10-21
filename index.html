@@ -19,24 +19,27 @@
             <div class="decors twinkling3" id="decor5"></div>
         </div>
         <div class="navbar">
-            <div class="center navButton" id="projectsButton">
-                <h1>Projects</h1>
+            <a class="navbar-left" href="#about"><h1>Tony Xia</h1></a>
+            <div class="navbar-right">
+                <div class="center navButton" id="projectsButton">
+                    <h1>Projects</h1>
+                </div>
+                <div class="center navButton" id="skillsButton">
+                    <h1>Skills</h1>
+                </div>
+                <a href="res/resume-ML.pdf" class="center navButton" target="_blank">
+                    <h1>CV</h1>
+                </a>
+                <a href="https://www.youtube.com/watch?v=yYjR5owHjeY" class="center navButton" target="_blank">
+                    <h1>More</h1>
+                </a>
             </div>
-            <div class="center navButton" id="skillsButton">
-                <h1>Skills</h1>
-            </div>
-            <a href="res/resume-ML.pdf" class="center navButton" target="_blank">
-                <h1>CV</h1>
-            </a>
-            <a href="https://www.youtube.com/watch?v=yYjR5owHjeY" class="center navButton" target="_blank">
-                <h1>More</h1>
-            </a>
         </div>
         <div class="mainBody" id="about">
             <div class="aboutgrid">
                 <div class="aboutleftCol">
                     <div class="name center">
-                        <p>TONY<br id="responsiveLB"/> XIA</p>
+                        <p>Tony<br id="responsiveLB"/> Xia</p>
                     </div>
                     <div class="contact center">
                         <p>
@@ -79,24 +82,27 @@
             <div id="projectsgrid">
                 <h1 id="projectsTitleText">Projects</h1>
                 <div id="projectsLeftCol">
-                    <div class="projectsButtons focused" id="projectsButtons1">Joe's Kitchen</div>
-                    <div class="projectsButtons" id="projectsButtons2">CodeForces Decoder</div>
-                    <div class="projectsButtons" id="projectsButtons3">BQuest</div>
-                    <div class="projectsButtons" id="projectsButtons4">eXchange</div>
-                    <div class="projectsButtons" id="projectsButtons5">Super Slime Rumble</div>
-                    <div class="projectsButtons" id="projectsButtons6">Battle Beasts</div>
-                    <div class="projectsButtons" id="projectsButtons7">Orion? Orion!</div>
-                    <div class="projectsButtons" id="projectsButtons8">Snorpheus</div>
+                    <div class="projectsButtons focused" id="projectsButtons1">IconQA</div>
+                    <div class="projectsButtons" id="projectsButtons2">Joe's Kitchen</div>
+                    <div class="projectsButtons" id="projectsButtons3">CodeForces Decoder</div>
+                    <div class="projectsButtons" id="projectsButtons4">BQuest</div>
+                    <div class="projectsButtons" id="projectsButtons5">eXchange</div>
+                    <div class="projectsButtons" id="projectsButtons6">Super Slime Rumble</div>
+                    <div class="projectsButtons" id="projectsButtons7">Battle Beasts</div>
+                    <div class="projectsButtons" id="projectsButtons8">Orion? Orion!</div>
+                    <div class="projectsButtons" id="projectsButtons9">Snorpheus</div>
                 </div>
                 <div id="projectsRightCol">
-                    <h1 id="projectName">Joe's Kitchen</h1>
-                    <p id="projectDes">A mobile app that finds recipes based on what you have in the fridge <br>
-                        Developed using React native, Google Vision API, and Spoonacular API <br>
-                        TOHacks 2021 Submission
+                    <h1 id="projectName">IconQA</h1>
+                    <p id="projectDes">
+                        <strong>IconQA: A New Benchmark for Abstract Diagram Understanding and Visual Language Reasoning</strong> <br>
+                        Pan Lu, Liang Qiu, Jiaqi Chen,<strong>Tony Xia</strong>, Yizhou Zhao, Wei Zhang, Zhou Yu, Xiaodan Liang, Song-Chun Zhu <br>
+                        Accepted to NeurIPS 2021
+                    </p>
                     <div id="projectDis">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YzSc19ZaH7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <img src="./img/iconqa.png" width="100%" alt="IconQA">
                     </div>
-                    <a id="projectLink" href="https://devpost.com/software/joe-s-kitchen?ref_content=my-projects-tab&ref_feature=my_projects" target="_blank">
+                    <a id="projectLink" href="https://iconqa.github.io/" target="_blank">
                         Go Check It Out!
                     </a>
                 </div>
@@ -105,6 +111,7 @@
         <div class="background lightgrey" id="skillsBackground"></div>
         <!-- <div class="background transparent" id="skillsBackground"></div> -->
         <div class="mainBody" id="skills">
+            <a id="skillsAnchor"></a>
             <h1 id="skillsTitle">Technical Skills</h1>
             <div id="skillsgrid">
                 <div class="skills" id="skill1">

@@ -1,6 +1,20 @@
 var projects = [
     {
         name:
+            "IconQA",
+        description:
+            `
+                <strong>IconQA: A New Benchmark for Abstract Diagram Understanding and Visual Language Reasoning</strong> <br>
+                Pan Lu, Liang Qiu, Jiaqi Chen,<strong>Tony Xia</strong>, Yizhou Zhao, Wei Zhang, Zhou Yu, Xiaodan Liang, Song-Chun Zhu <br>
+                Accepted to NeurIPS 2021
+            `,
+        display:
+            `<img src="./img/iconqa.png" width="100%" alt="IconQA">`,
+        link:
+            "https://iconqa.github.io/"
+    },
+    {
+        name:
             "Joe's Kitchen",
         description:
             `
@@ -63,7 +77,7 @@ var projects = [
             Written with Python's Pygame library <br>
             Graphics designed with Pixilart`,
         display:
-            `<iframe height="100%" width="100%" src="https://www.youtube.com/embed/ntJ5wb_uzig" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+            `<iframe width="100%" height="100%" src="https://www.youtube.com/embed/WwnkG1DfVL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
         link:
             "https://github.com/TonyXia2001/Super-Slime-Rumble"
     },

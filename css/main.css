@@ -2,6 +2,8 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .mainBody {
@@ -90,35 +92,63 @@ html, body {
 
 /* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR *//* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR *//* NAVBAR NAVBAR NAVBAR NAVBAR NAVBAR */
 .navbar {
-    /* background-color: rgb(227, 227, 227); */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* color: white; */
     margin: 0;
-    height: 10vh;
+    padding: 0;
+    height: 5vh;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 2;
 }
 
-.navButton {
-    width: 10vw;
+.navbar-left {
+    color: white;
+    font-weight: bold;
     padding: 0 1vw;
-    font-family: "Futura", Trebuchet MS, Arial, sans-serif;
-    font-size: 0.9vw;
+    cursor:pointer;
+    text-decoration: none;
+}
+.navbar-left>h1 {
+    font-size: 1.3em;
+    width: 5vw;
+    padding: 0 1vw;
+    /* font-size: 1em; */
     height: 100%;
     align-items: center;
+    justify-content: center;
+}
+
+.navbar-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navButton {
+    width: 5vw;
+    padding: 0 1vw;
+    /* font-size: 1em; */
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .navButton>h1 {
     font-weight: bold;
+    font-size: 1.3em;
 }
 
 .navButton, .navButton:visited {
     text-decoration: none;
-    color: silver;
+    color: white;
 }
 
 .navButton:hover {
@@ -127,6 +157,12 @@ html, body {
 }
 
 @media screen and (max-width: 700px), screen and (max-device-width: 700px) {
+    .navbar {
+        justify-content: center;
+    }
+    .navbar-left {
+        display: none;
+    }
     .navButton {
         font-size: 1.7vw;
         margin: 0 1vw;
@@ -166,11 +202,10 @@ html, body {
 
 .name>p {
     width: 100%;
-    font-size: 6vw;
-    font-family: "Futura", Trebuchet MS, Arial, sans-serif;
-    margin-bottom: 1vh;
+    font-size: 5vw;
+    margin-bottom: 5vh;
     text-align: center;
-    color: silver;
+    color: white;
 }
 #responsiveLB {
     display: none;
@@ -179,8 +214,7 @@ html, body {
 .contact>p {
     width: 100%;
     font-size: 1vw;
-    font-family: "Futura", Trebuchet MS, Arial, sans-serif;
-    color: silver;
+    color: white;
     margin: 5px 0;
     text-align: center;
 }
@@ -198,8 +232,7 @@ html, body {
     width: 100%;
     height: 0;
     font-size: 2vw;
-    font-family: "Futura", Trebuchet MS, Arial, sans-serif;
-    color: silver;
+    color: white;
     margin-top: 0vh;
     text-align: center;
     padding: 0 1.5vw;
@@ -208,7 +241,7 @@ html, body {
 
 .learnMoreButton {
     border-radius: 15px;
-    border: solid silver 2px;
+    border: solid white 2px;
     padding: 10px;
     cursor: pointer;
 }
@@ -219,10 +252,9 @@ html, body {
 
 .learnMoreButton>p {
     width: auto;
-    color: silver;
+    color: white;
     font-size: 1.5vw;
     font-weight: bold;
-    font-family: "Futura", Trebuchet MS, Arial, sans-serif;
     text-align: center;
     margin: 0;
 }
@@ -303,7 +335,6 @@ html, body {
 
 #projectsTitleText {
     text-align: center;
-    font-family: "Futura", Trebuchet MS, Arial, sans-serif;
     grid-column: 1/2;
     font-size: 4em;
     /* border-right: 1px solid silver; */
@@ -331,7 +362,6 @@ html, body {
 
 .projectsButtons {
     width: 100%;
-    font-family:  "Futura", Trebuchet MS, Arial, sans-serif;
     color: silver;
     font-size: 1.5em;
     text-align: center;
@@ -356,13 +386,11 @@ html, body {
 
 #projectName {
     margin: 0 auto 2.5vh auto;
-    font-family: "Futura", Trebuchet MS, Arial, sans-serif;
     font-size: 2em;
 }
 
 #projectDes {
     margin: 20px auto;
-    font-family:  "Futura", Trebuchet MS, Arial, sans-serif;
     font-size: 1.2em;
     text-align: center;
 }
@@ -378,7 +406,6 @@ html, body {
     text-decoration: none;
     margin: 2.5vh auto;
     width: 20vw;
-    font-family: "Futura", Trebuchet MS, Arial, sans-serif;
     text-align: center;
     display: block;
     border-radius: 10px;
@@ -467,9 +494,13 @@ html, body {
     /* background-image: url("../img/background2.jpg"); */
 }
 
+#skillsAnchor {
+    position: relative;
+    top:5vh;
+}
+
 #skillsTitle {
     text-align: center;
-    font-family: "Futura", Trebuchet MS, Arial, sans-serif;
     grid-column: 1/3;
     font-size: 4em;
     margin-top: 0;
@@ -513,7 +544,6 @@ html, body {
     flex-direction: column;
     justify-content: center;
     font-size: 2em;
-    font-family: "Futura", Trebuchet MS, Arial, sans-serif;
 }
 
 @media screen and (max-width: 700px), screen and (max-device-width: 700px) {
